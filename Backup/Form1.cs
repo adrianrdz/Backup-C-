@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,7 +83,36 @@ namespace Backup
         private void button1_Click(object sender, EventArgs e)
         {
             //dir.getSubDirectories();
-            dir.moveFiles(dir.Source);
+            
+            //string path = String.Format("{0}", browseDir.SelectedPath);
+            DirectoryInfo d = null;
+            try
+            {
+                d = new DirectoryInfo(textBox2.Text);
+                if (d.Exists && !Directory.EnumerateFileSystemEntries(textBox2.Text).Any())
+                {
+                    dir.Backup = textBox2.Text;
+                    dir.moveFiles(dir.Source);
+                    Console.WriteLine("Empty!!"); //Debugging
+                }
+                else
+                    MessageBox.Show("Back up folder is not empy!\nPlease enter an existing empty folder");
+            }
+            catch (System.ArgumentException)
+            {
+                d = null;
+            }
+           
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            dir.Backup = textBox2.Text;
         }
     }
 }
