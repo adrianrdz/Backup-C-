@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,14 +50,16 @@ namespace Backup
                 {
                     foreach (string curr in files)
                     {
-                       
+                       //string folderStruct = 
                         string fileName = curr.Substring(path.Length + 1);
                         string source = System.IO.Path.Combine(path, fileName);
-                        string dest = System.IO.Path.Combine(backupDir, fileName);
-                        
+                        //string dest = System.IO.Path.Combine(backupDir, fileName);
+                        string dest = backupDir + "\\" + curr.Substring(sourceDir.Length + 1);
+                        string destStruct = dest.Replace(fileName, "");//set up folder structure
+                        Directory.CreateDirectory(destStruct);
                         //Directory.Move(curr, Path.Combine(backupDir, fileName));
-                        //System.IO.File.Copy(source, dest, true);
-                        FileSystem.CopyDirectory(source, dest, UIOption.AllDialogs);
+                        System.IO.File.Copy(source, dest, true);
+                      //  FileSystem.CopyDirectory(source, dest, UIOption.AllDialogs);
                     }
                 }
                 foreach (string s in dirs)
