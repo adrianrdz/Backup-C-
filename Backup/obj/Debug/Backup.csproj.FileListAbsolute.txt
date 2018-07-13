@@ -1,0 +1,9 @@
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\bin\Debug\Backup.exe.config
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\bin\Debug\Backup.exe
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\bin\Debug\Backup.pdb
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.csprojResolveAssemblyReference.cache
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.Form1.resources
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.Properties.Resources.resources
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.csproj.GenerateResource.Cache
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.exe
+c:\users\fcabral.pds\documents\visual studio 2013\Projects\Backup\Backup\obj\Debug\Backup.pdb
